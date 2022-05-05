@@ -1,0 +1,206 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.bodyFondoTotal {
+    background-image: url(../recursos/brandon-hendrickson-1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+}
+
+header {
+    display: flex;
+    background-color: rgba(1,144,249,255);
+    height: 100px;
+}
+
+.header__logo {
+    border-radius: 30px;
+}
+
+.header__titulo {
+    display: flex;
+    color: black;
+    font-size: 100px;
+    text-align: center;
+}
+
+.header__navegacion {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blueviolet;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header__logo {
+    width: 100px;
+    height: 100px;
+}
+
+h1 {
+    color: beige;
+    text-align: center;
+    font-size: 70px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 45px;
+}
+
+h3 {
+    color: white;
+}
+
+ 
+
+
+
+
+
+
+/*
+li {
+    color: beige;
+    list-style-type: none; 
+    margin: 10px;
+    text-align: end;
+}
+*/
+
+.productos__proteinas {
+    margin-top: 80px;
+}
+
+.productos__quemadores {
+    margin-top: 80px;
+}
+
+.productos__bcaa {
+    margin-top: 80px;
+}
+
+.productos__shakers {
+    margin-top: 80px;
+}
+
+.productos__creatina {
+    margin-top: 80px;
+}
+
+.nosotros__tamaño {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+p {
+    color: white;
+    font-size: 16px;
+}
+
+.boton {
+    background-color: aquamarine;
+    color: blueviolet;
+    border-radius: 5px;
+}
+
+.destacadosDeLaSemana {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.destacadosDeLaSemana__contenido {
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px 175px 40px;
+    margin-top: 15px;
+    margin-right: 700px; 
+    margin-left: 700px; 
+    margin-bottom: 15px;
+    border: 2px solid black;
+}
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.combos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap
+}
+
+.nuestrosAtletas__videos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.nuestrosAtletas__pro {
+    background-color: blueviolet;
+    padding: 40px;
+    margin-top: 15px;
+    margin-right: 700px; 
+    margin-left: 700px; 
+    border: 2px solid black;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.footer__imagen {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+.footer__contactanos {
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.footer__horarios {
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.footer__seguinos {
+    text-align: right;
+    padding-left: 40px;
+    padding-right: 40px;
+}
