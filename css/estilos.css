@@ -14,12 +14,15 @@
 
 header {
     display: flex;
+    justify-content: space-between;
     background-color: rgba(1,144,249,255);
     height: 100px;
 }
 
 .header__logo {
+    width: 12vw;
     border-radius: 30px;
+    display: flex;
 }
 
 .header__titulo {
@@ -29,13 +32,17 @@ header {
     text-align: center;
 }
 
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
 .header__navegacion {
     display: flex;
-    flex-wrap: wrap;
-    background-color: blueviolet;
-    padding: 10px;
-    margin: 20px;
-    border: 2px solid black;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 35px 0;
+    margin: auto;
 }
 
 a {
@@ -43,14 +50,11 @@ a {
     color: black;
 }
 
-.header__logo {
-    width: 100px;
-    height: 100px;
-}
 
 h1 {
+    display: flex;
     color: beige;
-    text-align: center;
+    text-align: center ;
     font-size: 70px;
     font-style: italic;
     text-decoration: underline;
@@ -66,41 +70,13 @@ h3 {
     color: white;
 }
 
- 
 
-
-
-
-
-
-/*
 li {
-    color: beige;
-    list-style-type: none; 
-    margin: 10px;
-    text-align: end;
-}
-*/
-
-.productos__proteinas {
-    margin-top: 80px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
-.productos__quemadores {
-    margin-top: 80px;
-}
 
-.productos__bcaa {
-    margin-top: 80px;
-}
-
-.productos__shakers {
-    margin-top: 80px;
-}
-
-.productos__creatina {
-    margin-top: 80px;
-}
 
 .nosotros__tamaño {
     color: white;
@@ -122,23 +98,50 @@ p {
 
 .destacadosDeLaSemana {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.destacadosDeLaSemana__titulo {
+    display: flex;
+    flex-wrap: wrap;
+    color: beige;
+   text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.destacadosDeLaSemana__box {
+    display: flex;
+    background-color: rgba(1,144,249,255);
+    margin-top: 3%;
+    margin-bottom: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 100%;
+    justify-content: center;
+
+    
+}
+
+.destacadosDeLaSemana__contenido {
+    background-color: rgba(1,144,249,255);
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
     height: auto;
     text-align: center;
+    border: 2px solid black;    
 }
 
-.destacadosDeLaSemana__contenido {
-    background-color: blueviolet;
+article, img, p, button {
     display: flex;
     flex-direction: column;
-    padding: 40px 40px 175px 40px;
-    margin-top: 15px;
-    margin-right: 700px; 
-    margin-left: 700px; 
-    margin-bottom: 15px;
-    border: 2px solid black;
+    justify-content: space-evenly;
 }
 
 .productos {
@@ -148,6 +151,26 @@ p {
     width: 100%;
     height: auto;
     text-align: center;
+}
+
+.productos__proteinas {
+    margin-top: 80px;
+}
+
+.productos__quemadores {
+    margin-top: 80px;
+}
+
+.productos__bcaa {
+    margin-top: 80px;
+}
+
+.productos__shakers {
+    margin-top: 80px;
+}
+
+.productos__creatina {
+    margin-top: 80px;
 }
 
 .combos {
@@ -174,33 +197,78 @@ p {
     border: 2px solid black;
 }
 
-.footer {
+footer {
     display: flex;
     flex-wrap: wrap;
-    background-color: black;
 }
 
+
+
+
 .footer__imagen {
-    width: 100px;
-    height: 100px;
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    height: 40px;
     border-radius: 30px;
 }
 
-.footer__contactanos {
-    text-align: left;
-    padding-left: 40px;
-    padding-right: 40px;
+
+.footer {
+    display: grid;
+    grid-template-areas: 
+    "contactanos horarios seguinos";
+    grid-template-columns:15fr 15fr 15fr;
+    grid-template-rows: 40px;
 }
 
-.footer__horarios {
+.grid__conteiner {
+    display: grid;
+    grid-template-columns: 2fr 11fr 2fr ;
+    margin-top: 10%;
+    margin-left:15%;
+    margin-right: 15%;
+}
+
+.grid__item {
     text-align: center;
-    padding-left: 40px;
-    padding-right: 40px;
 }
 
-.footer__seguinos {
-    text-align: right;
-    padding-left: 40px;
-    padding-right: 40px;
+
+
+/* tablet */
+@media (min-width: 541px) and (max-width: 720px) {
+
 }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* celular */
+@media (min-width: 320px) and (max-width: 540px) {
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
