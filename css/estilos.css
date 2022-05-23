@@ -53,8 +53,6 @@ nav {
     display: grid;
     font-family: 'Koulen';
     color: bisque
-    font-size: 100px;
-    justify-content: center;
 }
 
 a {
@@ -69,7 +67,7 @@ h1 {
     justify-content: center;
     font-size: 70px;
     font-style: italic;
-    text-decoration: underline;
+    
 }
 
 h2 {
@@ -127,13 +125,12 @@ button {
 }
 
 .destacadosDeLaSemana__titulo {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     color: beige;
-   text-align: center;
+   justify-content: center;
     font-size: 50px;
     font-style: italic;
-    text-decoration: underline;
+    
 }
 
 .destacadosDeLaSemana__box {
@@ -217,6 +214,13 @@ article, img, p, button {
     margin-right: 700px; 
     margin-left: 700px; 
     border: 2px solid black;
+}
+
+.card_conteiner {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    gap: 10px;
 }
 
 footer {
