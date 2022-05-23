@@ -11,6 +11,12 @@
     background-size: cover;
     position: center;
 }
+.bodyFondoGradiente {
+    background-image: linear-gradient(to top, rgb(150, 148, 148)
+    rgb(78, 77, 77)
+     );
+    
+}
 
 header {
     display: flex;
@@ -25,11 +31,9 @@ header {
     display: flex;
 }
 
-.header__titulo {
-    display: flex;
-    color: black;
-    font-size: 100px;
-    text-align: center;
+
+.bg-blue {
+    background-color: rgba(1,144,249,255) ;
 }
 
 nav {
@@ -45,6 +49,14 @@ nav {
     margin: auto;
 }
 
+.main__titulo {
+    display: grid;
+    font-family: 'Koulen';
+    color: bisque
+    font-size: 100px;
+    justify-content: center;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -52,9 +64,9 @@ a {
 
 
 h1 {
-    display: flex;
+    display: grid;
     color: beige;
-    text-align: center ;
+    justify-content: center;
     font-size: 70px;
     font-style: italic;
     text-decoration: underline;
