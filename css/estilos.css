@@ -116,13 +116,13 @@ button {
 
 
 
-.destacadosDeLaSemana {
+/*.destacadosDeLaSemana {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
     height: auto;
-}
+}*/
 
 .destacadosDeLaSemana__titulo {
     display: grid;
@@ -220,7 +220,7 @@ article, img, p, button {
     display: grid;
     grid-template-rows: 1fr;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 footer {
