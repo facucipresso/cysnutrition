@@ -1,0 +1,316 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.bodyFondoTotal {
+    background-image: url(../recursos/brandon-hendrickson-1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+}
+.bodyFondoGradiente {
+    background-image: linear-gradient(to top, rgb(150, 148, 148)
+    rgb(78, 77, 77)
+     );
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(1,144,249,255);
+    height: 100px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: yellow;
+}
+
+.header__logo {
+    width: 12vw;
+    border-radius: 30px;
+    display: flex;
+}
+
+
+.bg-blue {
+    background-color: rgba(1,144,249,255) ;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__navegacion {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 35px 0;
+    margin: auto;
+}
+
+.main__titulo {
+    display: grid;
+    font-family: 'Koulen';
+    color: bisque
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+h1 {
+    display: grid;
+    color: beige;
+    justify-content: center;
+    font-size: 70px;
+    font-style: italic;
+    
+}
+
+h2 {
+    color: rgb(117, 117, 100);
+    text-align: center;
+    font-size: 45px;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+}
+
+
+li {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+
+.nosotros__tamaño {
+    color: white;
+    font-size: 16px;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+   
+}
+
+p {
+    color: white;
+    font-size: 16px;
+}
+
+button {
+    background-color: aquamarine;
+    color: blueviolet;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: large;
+}
+
+.boton {
+    color: white;
+    background-image: linear-gradient(to top, rgb(7, 7, 63), rgb(10, 10, 122));
+    transform: scale(1.3);
+    margin: 30px;
+}
+    
+
+
+
+/*.destacadosDeLaSemana {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}*/
+
+.destacadosDeLaSemana__titulo {
+    display: grid;
+    color: beige;
+   justify-content: center;
+    font-size: 50px;
+    font-style: italic;
+    
+}
+
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.productos__proteinas {
+    margin-top: 80px;
+}
+
+.productos__quemadores {
+    margin-top: 80px;
+}
+
+.productos__bcaa {
+    margin-top: 80px;
+}
+
+.productos__shakers {
+    margin-top: 80px;
+}
+
+.productos__creatina {
+    margin-top: 80px;
+}
+
+.combos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap
+}
+
+.nuestrosAtletas__videos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.nuestrosAtletas__pro {
+    background-color: rgba(1,144,249,255);
+    padding: 40px;
+    margin-top: 15px;
+    margin-right: 40rem; 
+    margin-left: 40rem; 
+    border: 2px solid black;
+}
+
+.formulario {
+    display: grid ;
+    justify-content: center;
+}
+
+.card_conteiner {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+.footer__imagen {
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-areas: 
+    "contactanos horarios seguinos";
+    grid-template-columns:15fr 15fr 15fr;
+    grid-template-rows: 40px;
+}
+
+.grid__conteiner {
+    display: grid;
+    grid-template-columns: 2fr 11fr 2fr ;
+    margin-top: 10%;
+    margin-left:15%;
+    margin-right: 15%;
+}
+
+.grid__item {
+    text-align: center;
+}
+
+
+
+/* tablet */
+@media (min-width: 541px) and (max-width: 720px) {
+
+}
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* celular */
+@media (min-width: 320px) and (max-width: 540px) {
+    h1 {
+        display: grid;
+        color: beige;
+        justify-content: center;
+        font-size: 30px;
+        font-family: 'Koulen', cursive;
+        
+    }
+
+    h2 {
+        color: white;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .destacadosDeLaSemana__titulo {
+        display: grid;
+        color: beige;
+        justify-content: center;
+        font-size: 30px;
+        font-family: 'Koulen', cursive;
+    }
+
+    .texterea {
+        width: 60vw;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .relleno {
+        color: beige;
+    }
+ 
+   
+
+
+}
