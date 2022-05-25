@@ -25,6 +25,14 @@ header {
     height: 100px;
 }
 
+header a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: yellow;
+}
+
 .header__logo {
     width: 12vw;
     border-radius: 30px;
@@ -72,13 +80,14 @@ h1 {
 }
 
 h2 {
-    color: white;
+    color: rgb(117, 117, 100);
     text-align: center;
     font-size: 45px;
 }
 
 h3 {
     color: white;
+    text-align: center;
 }
 
 
@@ -92,8 +101,10 @@ li {
 .nosotros__tamaño {
     color: white;
     font-size: 16px;
+    margin-left: 25%;
+    margin-right: 25%;
     text-align: center;
-
+   
 }
 
 p {
@@ -136,35 +147,6 @@ button {
     
 }
 
-.destacadosDeLaSemana__box {
-    display: flex;
-    background-color: rgba(1,144,249,255);
-    margin-top: 3%;
-    margin-bottom: 5%;
-    margin-left: 30%;
-    margin-right: 30%;
-    width: 100%;
-    justify-content: center;
-
-    
-}
-
-.destacadosDeLaSemana__contenido {
-    background-color: rgba(1,144,249,255);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-    text-align: center;
-    border: 2px solid black;    
-}
-
-article, img, p, button {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
 
 .productos {
     display: flex;
@@ -211,12 +193,17 @@ article, img, p, button {
 }
 
 .nuestrosAtletas__pro {
-    background-color: blueviolet;
+    background-color: rgba(1,144,249,255);
     padding: 40px;
     margin-top: 15px;
-    margin-right: 700px; 
-    margin-left: 700px; 
+    margin-right: 40rem; 
+    margin-left: 40rem; 
     border: 2px solid black;
+}
+
+.formulario {
+    display: grid ;
+    justify-content: center;
 }
 
 .card_conteiner {
@@ -224,6 +211,10 @@ article, img, p, button {
     grid-template-rows: 1fr;
     justify-content: center;
     gap: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 footer {
@@ -286,11 +277,40 @@ footer {
 
 /* celular */
 @media (min-width: 320px) and (max-width: 540px) {
+    h1 {
+        display: grid;
+        color: beige;
+        justify-content: center;
+        font-size: 30px;
+        font-family: 'Koulen', cursive;
+        
+    }
 
+    h2 {
+        color: white;
+        text-align: center;
+        font-size: 25px;
+    }
 
+    .destacadosDeLaSemana__titulo {
+        display: grid;
+        color: beige;
+        justify-content: center;
+        font-size: 30px;
+        font-family: 'Koulen', cursive;
+    }
 
+    .texterea {
+        width: 60vw;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
 
-
+    .relleno {
+        color: beige;
+    }
+ 
+   
 
 
 }
