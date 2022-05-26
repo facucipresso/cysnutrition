@@ -1,66 +1,55 @@
+@import 'variables';
+@import 'header';
+@import 'footer';
+@import 'mediaqueries';
+
 *{
     margin: 0px;
     padding: 0px;
 }
 
+.body {
+    &__FondoTotal {
+        background-image: url(../recursos/brandon-hendrickson-1.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: center;
+    }
+    &__FondoGradiente {
+        background-image: linear-gradient(to top, rgb(150, 148, 148)
+        rgb(78, 77, 77));   
+    }
+}
 
-.bodyFondoTotal {
-    background-image: url(../recursos/brandon-hendrickson-1.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: center;
-}
-.bodyFondoGradiente {
-    background-image: linear-gradient(to top, rgb(150, 148, 148)
-    rgb(78, 77, 77)
-     );
-    
-}
 
 header {
     display: flex;
     justify-content: space-between;
-    background-color: rgba(1,144,249,255);
+    background-color: $color-principal;
     height: 100px;
-}
-
-header a:hover {
-    text-decoration: underline;
+    a:hover {
+        text-decoration: underline;
+    }
+    &__logo {
+        width: 12vw;
+        border-radius: 30px;
+        display: flex;
+    }
 }
 
 a:visited {
     color: yellow;
 }
 
-.header__logo {
-    width: 12vw;
-    border-radius: 30px;
-    display: flex;
-}
-
-
 .bg-blue {
-    background-color: rgba(1,144,249,255) ;
+    background-color: $color-principal;
 }
 
-nav {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.header__navegacion {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    list-style: none;
-    padding: 35px 0;
-    margin: auto;
-}
 
 .main__titulo {
     display: grid;
-    font-family: 'Koulen';
+    font-family: $font-principal;
     color: bisque
 }
 
@@ -69,18 +58,16 @@ a {
     color: black;
 }
 
-
 h1 {
     display: grid;
-    color: beige;
+    color: $color-titulo;
     justify-content: center;
     font-size: 70px;
-    font-style: italic;
-    
+    font-style: italic;    
 }
 
 h2 {
-    color: rgb(117, 117, 100);
+    color:$color-subtitulo;
     text-align: center;
     font-size: 45px;
 }
@@ -90,21 +77,17 @@ h3 {
     text-align: center;
 }
 
-
 li {
     margin-right: 10px;
     margin-left: 10px;
 }
-
-
 
 .nosotros__tamaño {
     color: white;
     font-size: 16px;
     margin-left: 25%;
     margin-right: 25%;
-    text-align: center;
-   
+    text-align: center;   
 }
 
 p {
@@ -126,25 +109,13 @@ button {
     transform: scale(1.3);
     margin: 30px;
 }
-    
-
-
-
-/*.destacadosDeLaSemana {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-}*/
 
 .destacadosDeLaSemana__titulo {
     display: grid;
-    color: beige;
+    color: $color-titulo;
    justify-content: center;
     font-size: 50px;
-    font-style: italic;
-    
+    font-style: italic;    
 }
 
 
@@ -155,26 +126,21 @@ button {
     width: 100%;
     height: auto;
     text-align: center;
-}
-
-.productos__proteinas {
-    margin-top: 80px;
-}
-
-.productos__quemadores {
-    margin-top: 80px;
-}
-
-.productos__bcaa {
-    margin-top: 80px;
-}
-
-.productos__shakers {
-    margin-top: 80px;
-}
-
-.productos__creatina {
-    margin-top: 80px;
+    &__proteinas {
+        margin-top: 80px;
+    }
+    &__quemadores {
+        margin-top: 80px;
+    }
+    &__bcaa {
+        margin-top: 80px;
+    }
+    &__shakers {
+        margin-top: 80px;
+    }
+    &__creatina {
+        margin-top: 80px;
+    }
 }
 
 .combos {
@@ -183,36 +149,36 @@ button {
     flex-wrap: wrap
 }
 
-.nuestrosAtletas__videos {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-    text-align: center;
-}
-
-.nuestrosAtletas__pro {
-    background-color: rgba(1,144,249,255);
-    padding: 40px;
-    margin-top: 15px;
-    margin-right: 40rem; 
-    margin-left: 40rem; 
-    border: 2px solid black;
+.nuestrosatletas {
+    &__videos {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    &__pro {
+        background-color: $color-principal;
+        padding: 40px;
+        margin-top: 15px;
+        margin-right: 40rem; 
+        margin-left: 40rem; 
+        border: 2px solid black;
+    }   
 }
 
 .formulario {
     display: grid ;
     justify-content: center;
-}
+} 
 
-.card_conteiner {
+.card__conteiner {
     display: grid;
     grid-template-rows: 1fr;
     justify-content: center;
     gap: 20px;
 }
-
 .card:hover {
     transform: scale(1.05);
 }
@@ -222,24 +188,19 @@ footer {
     flex-wrap: wrap;
 }
 
-
-
-
-.footer__imagen {
-    display: flex;
-    flex-direction: column;
-    width: 40px;
-    height: 40px;
-    border-radius: 30px;
-}
-
-
 .footer {
     display: grid;
     grid-template-areas: 
     "contactanos horarios seguinos";
     grid-template-columns:15fr 15fr 15fr;
     grid-template-rows: 40px;
+    &__imagen {
+        display: flex;
+        flex-direction: column;
+        width: 40px;
+        height: 40px;
+        border-radius: 30px;
+    }
 }
 
 .grid__conteiner {
@@ -253,7 +214,6 @@ footer {
 .grid__item {
     text-align: center;
 }
-
 
 
 /* tablet */
@@ -279,11 +239,10 @@ footer {
 @media (min-width: 320px) and (max-width: 540px) {
     h1 {
         display: grid;
-        color: beige;
+        color: $color-titulo;
         justify-content: center;
         font-size: 30px;
-        font-family: 'Koulen', cursive;
-        
+        font-family: $font-principal;   
     }
 
     h2 {
@@ -307,7 +266,7 @@ footer {
     }
 
     .relleno {
-        color: beige;
+        color: $color-titulo;
     }
  
    

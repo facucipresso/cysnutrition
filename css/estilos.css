@@ -1,16 +1,42 @@
 @charset "UTF-8";
+/* tablet */
+/* celular */
+@media (min-width: 320px) and (max-width: 540px) {
+  h1 {
+    display: grid;
+    color: beige;
+    justify-content: center;
+    font-size: 30px;
+    font-family: "Koulen", cursive; }
+  h2 {
+    color: white;
+    text-align: center;
+    font-size: 25px; }
+  .destacadosDeLaSemana__titulo {
+    display: grid;
+    color: beige;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Koulen', cursive; }
+  .texterea {
+    width: 60vw;
+    margin-left: 20%;
+    margin-right: 20%; }
+  .relleno {
+    color: beige; } }
+
 * {
   margin: 0px;
   padding: 0px; }
 
-.bodyFondoTotal {
+.body__FondoTotal {
   background-image: url(../recursos/brandon-hendrickson-1.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   position: center; }
 
-.bodyFondoGradiente {
+.body__FondoGradiente {
   background-image: linear-gradient(to top, #969494 #4e4d4d); }
 
 header {
@@ -18,36 +44,22 @@ header {
   justify-content: space-between;
   background-color: #0190f9;
   height: 100px; }
-
-header a:hover {
-  text-decoration: underline; }
+  header a:hover {
+    text-decoration: underline; }
+  header__logo {
+    width: 12vw;
+    border-radius: 30px;
+    display: flex; }
 
 a:visited {
   color: yellow; }
 
-.header__logo {
-  width: 12vw;
-  border-radius: 30px;
-  display: flex; }
-
 .bg-blue {
   background-color: #0190f9; }
 
-nav {
-  display: flex;
-  justify-content: flex-end; }
-
-.header__navegacion {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-  list-style: none;
-  padding: 35px 0;
-  margin: auto; }
-
 .main__titulo {
   display: grid;
-  font-family: 'Koulen';
+  font-family: "Koulen", cursive;
   color: bisque; }
 
 a {
@@ -98,13 +110,6 @@ button {
   transform: scale(1.3);
   margin: 30px; }
 
-/*.destacadosDeLaSemana {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-}*/
 .destacadosDeLaSemana__titulo {
   display: grid;
   color: beige;
@@ -119,28 +124,23 @@ button {
   width: 100%;
   height: auto;
   text-align: center; }
-
-.productos__proteinas {
-  margin-top: 80px; }
-
-.productos__quemadores {
-  margin-top: 80px; }
-
-.productos__bcaa {
-  margin-top: 80px; }
-
-.productos__shakers {
-  margin-top: 80px; }
-
-.productos__creatina {
-  margin-top: 80px; }
+  .productos__proteinas {
+    margin-top: 80px; }
+  .productos__quemadores {
+    margin-top: 80px; }
+  .productos__bcaa {
+    margin-top: 80px; }
+  .productos__shakers {
+    margin-top: 80px; }
+  .productos__creatina {
+    margin-top: 80px; }
 
 .combos {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap; }
 
-.nuestrosAtletas__videos {
+.nuestrosatletas__videos {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -148,7 +148,7 @@ button {
   height: auto;
   text-align: center; }
 
-.nuestrosAtletas__pro {
+.nuestrosatletas__pro {
   background-color: #0190f9;
   padding: 40px;
   margin-top: 15px;
@@ -160,7 +160,7 @@ button {
   display: grid;
   justify-content: center; }
 
-.card_conteiner {
+.card__conteiner {
   display: grid;
   grid-template-rows: 1fr;
   justify-content: center;
@@ -173,18 +173,17 @@ footer {
   display: flex;
   flex-wrap: wrap; }
 
-.footer__imagen {
-  display: flex;
-  flex-direction: column;
-  width: 40px;
-  height: 40px;
-  border-radius: 30px; }
-
 .footer {
   display: grid;
   grid-template-areas: "contactanos horarios seguinos";
   grid-template-columns: 15fr 15fr 15fr;
   grid-template-rows: 40px; }
+  .footer__imagen {
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px; }
 
 .grid__conteiner {
   display: grid;
@@ -204,7 +203,7 @@ footer {
     color: beige;
     justify-content: center;
     font-size: 30px;
-    font-family: 'Koulen', cursive; }
+    font-family: "Koulen", cursive; }
   h2 {
     color: white;
     text-align: center;
