@@ -149,15 +149,13 @@ button {
     flex-wrap: wrap
 }
 
-.nuestrosatletas {
-    &__videos {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 100%;
-        height: auto;
-        text-align: center;
-    }
+.nuestrosAtletas {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: auto;
     &__pro {
         background-color: $color-principal;
         padding: 40px;
@@ -173,15 +171,20 @@ button {
     justify-content: center;
 } 
 
+
 .card__conteiner {
     display: grid;
-    grid-template-rows: 1fr;
-    justify-content: center;
-    gap: 20px;
+     grid-template-rows: 1fr;
+     justify-content: center;
+     gap: 20px;
+     &card:hover {
+        transform: scale(1.05);
+     }   
 }
-.card:hover {
-    transform: scale(1.05);
-}
+
+
+
+
 
 footer {
     display: flex;
@@ -268,8 +271,16 @@ footer {
     .relleno {
         color: $color-titulo;
     }
- 
-   
+    
+    .footer {
+    display: grid;
+    grid-template-areas: 
+    "contactanos 
+    horarios 
+    seguinos";
+    grid-template-rows: 5fr 5fr 5fr;
+    grid-template-columns: 3fr;
+    }
 
 
 }

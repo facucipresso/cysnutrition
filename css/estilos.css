@@ -140,21 +140,20 @@ button {
   flex-direction: column;
   flex-wrap: wrap; }
 
-.nuestrosatletas__videos {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+.nuestrosAtletas {
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  gap: 20px;
   width: 100%;
-  height: auto;
-  text-align: center; }
-
-.nuestrosatletas__pro {
-  background-color: #0190f9;
-  padding: 40px;
-  margin-top: 15px;
-  margin-right: 40rem;
-  margin-left: 40rem;
-  border: 2px solid black; }
+  height: auto; }
+  .nuestrosAtletas__pro {
+    background-color: #0190f9;
+    padding: 40px;
+    margin-top: 15px;
+    margin-right: 40rem;
+    margin-left: 40rem;
+    border: 2px solid black; }
 
 .formulario {
   display: grid;
@@ -165,9 +164,8 @@ button {
   grid-template-rows: 1fr;
   justify-content: center;
   gap: 20px; }
-
-.card:hover {
-  transform: scale(1.05); }
+  .card__conteinercard:hover {
+    transform: scale(1.05); }
 
 footer {
   display: flex;
@@ -219,4 +217,9 @@ footer {
     margin-left: 20%;
     margin-right: 20%; }
   .relleno {
-    color: beige; } }
+    color: beige; }
+  .footer {
+    display: grid;
+    grid-template-areas: "contactanos  horarios  seguinos";
+    grid-template-rows: 5fr 5fr 5fr;
+    grid-template-columns: 3fr; } }
