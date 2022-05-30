@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'sasscript';
 @import 'header';
 @import 'footer';
 @import 'mediaqueries';
@@ -10,15 +11,15 @@
 
 .body {
     &__FondoTotal {
-        background-image: url(../recursos/brandon-hendrickson-1.jpg);
+        background-image: url(../recursos/fondoGym2.jpg);
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
         position: center;
     }
     &__FondoGradiente {
-        background-image: linear-gradient(to top, rgb(150, 148, 148)
-        rgb(78, 77, 77));   
+        background-image: linear-gradient(to top, rgb(121, 117, 118)
+        rgb(39, 37, 37));   
     }
 }
 
@@ -174,11 +175,11 @@ button {
 
 .card__conteiner {
     display: grid;
-     grid-template-rows: 1fr;
-     justify-content: center;
-     gap: 20px;
-     &card:hover {
-        transform: scale(1.05);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    gap: 20px;
+    :hover {
+        transform: scale(1.01);
      }   
 }
 
@@ -281,6 +282,4 @@ footer {
     grid-template-rows: 5fr 5fr 5fr;
     grid-template-columns: 3fr;
     }
-
-
-}
+    }

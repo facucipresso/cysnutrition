@@ -30,14 +30,14 @@
   padding: 0px; }
 
 .body__FondoTotal {
-  background-image: url(../recursos/brandon-hendrickson-1.jpg);
+  background-image: url(../recursos/fondoGym2.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   position: center; }
 
 .body__FondoGradiente {
-  background-image: linear-gradient(to top, #969494 #4e4d4d); }
+  background-image: linear-gradient(to top, #797576 #272525); }
 
 header {
   display: flex;
@@ -164,8 +164,8 @@ button {
   grid-template-rows: 1fr;
   justify-content: center;
   gap: 20px; }
-  .card__conteinercard:hover {
-    transform: scale(1.05); }
+  .card__conteiner :hover {
+    transform: scale(1.01); }
 
 footer {
   display: flex;
