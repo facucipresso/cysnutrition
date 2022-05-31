@@ -11,7 +11,7 @@
 
 .body {
     &__FondoTotal {
-        background-image: url(../recursos/fondoGym2.jpg);
+        background-image: url(../recursos/metroflex.n.jpg);
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
@@ -53,6 +53,11 @@ a:visited {
     font-family: $font-principal;
     color: bisque
 }
+
+@mixin fierros {
+    
+}
+
 
 a {
     text-decoration: none;
