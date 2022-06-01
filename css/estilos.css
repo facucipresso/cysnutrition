@@ -12,6 +12,9 @@
     color: white;
     text-align: center;
     font-size: 25px; }
+  a {
+    color: white;
+    text-decoration: none; }
   .destacadosDeLaSemana__titulo {
     display: grid;
     color: beige;
@@ -62,10 +65,6 @@ a:visited {
   font-family: "Koulen", cursive;
   color: bisque; }
 
-a {
-  text-decoration: none;
-  color: black; }
-
 h1 {
   display: grid;
   color: beige;
@@ -85,6 +84,16 @@ h3 {
 li {
   margin-right: 10px;
   margin-left: 10px; }
+
+h2 {
+  color: white;
+  font-size: 3rem;
+  font-family: calibri;
+  text-align: center; }
+
+a {
+  color: black;
+  text-decoration: none; }
 
 .nosotros__tamaño {
   color: white;
@@ -220,6 +229,6 @@ footer {
     color: beige; }
   .footer {
     display: grid;
-    grid-template-areas: "contactanos  horarios  seguinos";
     grid-template-rows: 5fr 5fr 5fr;
-    grid-template-columns: 3fr; } }
+    grid-template-columns: 3fr;
+    grid-template-areas: "contactanos  horarios  seguinos"; } }

@@ -59,10 +59,7 @@ a:visited {
 }
 
 
-a {
-    text-decoration: none;
-    color: black;
-}
+
 
 h1 {
     display: grid;
@@ -71,6 +68,7 @@ h1 {
     font-size: 70px;
     font-style: italic;    
 }
+
 
 h2 {
     color:$color-subtitulo;
@@ -86,6 +84,26 @@ h3 {
 li {
     margin-right: 10px;
     margin-left: 10px;
+}
+
+@mixin letrasSubtitulos ($color , $size , $fuente, $alineacion){
+    color: $color;
+    font-size: $size;
+    font-family: $fuente;
+    text-align: $alineacion;
+}
+
+h2 {
+    @include letrasSubtitulos(white, 3rem, calibri, center )
+}
+
+@mixin letrasBotones($color, $subrayado) {
+    color: $color;
+    text-decoration: $subrayado;
+}
+
+a {
+    @include letrasBotones(black,none )
 }
 
 .nosotros__tamaño {
@@ -280,11 +298,12 @@ footer {
     
     .footer {
     display: grid;
+    grid-template-rows: 5fr 5fr 5fr;
+    grid-template-columns: 3fr;
     grid-template-areas: 
     "contactanos 
     horarios 
     seguinos";
-    grid-template-rows: 5fr 5fr 5fr;
-    grid-template-columns: 3fr;
+    
     }
     }
