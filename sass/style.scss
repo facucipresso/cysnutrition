@@ -47,38 +47,31 @@ a:visited {
     background-color: $color-principal;
 }
 
-
 .main__titulo {
     display: grid;
     font-family: $font-principal;
     color: bisque
 }
 
-@mixin fierros {
-    
-}
-
-
-
-
 h1 {
     display: grid;
     color: $color-titulo;
     justify-content: center;
-    font-size: 70px;
+    font-size: 5rem;
     font-style: italic;    
 }
 
-
 h2 {
-    color:$color-subtitulo;
+    color:$color-titulo;
     text-align: center;
-    font-size: 45px;
+    font-size: 4rem; 
+    font-style: italic;
 }
 
 h3 {
     color: white;
     text-align: center;
+    font-size: 3rem;
 }
 
 li {
@@ -142,7 +135,6 @@ button {
     font-style: italic;    
 }
 
-
 .productos {
     display: flex;
     flex-direction: column;
@@ -205,10 +197,6 @@ button {
         transform: scale(1.01);
      }   
 }
-
-
-
-
 
 footer {
     display: flex;
