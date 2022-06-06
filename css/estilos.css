@@ -54,6 +54,9 @@ header {
     border-radius: 30px;
     display: flex; }
 
+.link-nav {
+  color: black; }
+
 a:visited {
   color: yellow; }
 
@@ -73,14 +76,16 @@ h1 {
   font-style: italic; }
 
 h2 {
+  display: grid;
   color: beige;
-  text-align: center;
+  justify-content: center;
   font-size: 4rem;
   font-style: italic; }
 
 h3 {
+  display: grid;
   color: white;
-  text-align: center;
+  justify-content: center;
   font-size: 3rem; }
 
 li {
@@ -96,6 +101,12 @@ h2 {
 a {
   color: black;
   text-decoration: none; }
+
+.nosotros__titulo {
+  color: beige;
+  text-align: center;
+  font-size: 5rem;
+  font-style: italic; }
 
 .nosotros__tamaño {
   color: white;
@@ -125,7 +136,7 @@ button {
   display: grid;
   color: beige;
   justify-content: center;
-  font-size: 50px;
+  font-size: 5rem;
   font-style: italic; }
 
 .productos {
@@ -135,6 +146,11 @@ button {
   width: 100%;
   height: auto;
   text-align: center; }
+  .productos__titulo {
+    color: beige;
+    text-align: center;
+    font-size: 5rem;
+    font-style: italic; }
   .productos__proteinas {
     margin-top: 80px; }
   .productos__quemadores {
@@ -150,6 +166,11 @@ button {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap; }
+  .combos__titulo {
+    color: beige;
+    text-align: center;
+    font-size: 5rem;
+    font-style: italic; }
 
 .nuestrosAtletas {
   display: grid;
@@ -158,6 +179,11 @@ button {
   gap: 20px;
   width: 100%;
   height: auto; }
+  .nuestrosAtletas__titulo {
+    color: beige;
+    text-align: center;
+    font-size: 5rem;
+    font-style: italic; }
   .nuestrosAtletas__pro {
     background-color: #0190f9;
     padding: 40px;

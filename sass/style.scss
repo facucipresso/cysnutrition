@@ -39,6 +39,10 @@ header {
     }
 }
 
+.link-nav {
+    color: black;
+}
+
 a:visited {
     color: yellow;
 }
@@ -62,15 +66,17 @@ h1 {
 }
 
 h2 {
+    display: grid;
     color:$color-titulo;
-    text-align: center;
+    justify-content: center;
     font-size: 4rem; 
     font-style: italic;
 }
 
 h3 {
+    display: grid;
     color: white;
-    text-align: center;
+    justify-content: center;
     font-size: 3rem;
 }
 
@@ -98,15 +104,21 @@ h2 {
 a {
     @include letrasBotones(black,none )
 }
-
-.nosotros__tamaño {
+.nosotros {
+    &__titulo {
+        color: $color-titulo;
+        text-align: center;
+        font-size: 5rem;
+        font-style: italic;
+    }
+    &__tamaño {
     color: white;
     font-size: 16px;
     margin-left: 25%;
     margin-right: 25%;
     text-align: center;   
+    }
 }
-
 p {
     color: white;
     font-size: 16px;
@@ -131,7 +143,7 @@ button {
     display: grid;
     color: $color-titulo;
    justify-content: center;
-    font-size: 50px;
+    font-size: 5rem;
     font-style: italic;    
 }
 
@@ -142,6 +154,12 @@ button {
     width: 100%;
     height: auto;
     text-align: center;
+    &__titulo {
+        color: $color-titulo;
+        text-align: center;
+        font-size: 5rem;
+        font-style: italic;
+    }
     &__proteinas {
         margin-top: 80px;
     }
@@ -162,7 +180,14 @@ button {
 .combos {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    &__titulo {
+        color: $color-titulo;
+        text-align: center;
+        font-size: 5rem;
+        font-style: italic;
+    }
+    
 }
 
 .nuestrosAtletas {
@@ -172,6 +197,12 @@ button {
     gap: 20px;
     width: 100%;
     height: auto;
+    &__titulo {
+        color: $color-titulo;
+        text-align: center;
+        font-size: 5rem;
+        font-style: italic;
+    }
     &__pro {
         background-color: $color-principal;
         padding: 40px;
