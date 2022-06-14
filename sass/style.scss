@@ -80,6 +80,10 @@ h3 {
     font-size: 3rem;
 }
 
+h4 { display: grid;
+    font-size: 1.5rem;
+}
+
 li {
     margin-right: 10px;
     margin-left: 10px;
@@ -249,72 +253,27 @@ footer {
     }
 }
 
-.grid__conteiner {
+
+
+.grid-contenedor {
     display: grid;
-    grid-template-columns: 2fr 11fr 2fr ;
-    margin-top: 10%;
-    margin-left:15%;
-    margin-right: 15%;
-}
-
-.grid__item {
-    text-align: center;
-}
-
-
-.pie-de-pagina {
-    width: 100%;
     background-color: black;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.pie-de-pagina .grupo-1 {
-    width: 100%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 45px 0px;
-}
-
-.pie-de-pagina .grupo-1 .box figure{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.pie-de-pagina .grupo-1 .box figure {
-
-}
-
-.pie-de-pagina .grupo-1 .box h2 {
+.grid-contenedor div {
+    background-color: black;
     color: white;
-    margin-bottom: 25px;
-    font-size: 20px;
-
+    font-family: $font-principal;
+    text-align: center;
+    border: 1px solid black;
 }
 
-.pie-de-pagina .grupo-1 .box p {
-    color: #efefef;
-    margin-bottom: 10px;
-
+.imagen__footer {
+    justify-content: center;
 }
 
-.pie-de-pagina .grupo-1 img {
-    display: inline-block;
-    text-decoration: none;
-    margin-right: 10px;
-    
-}
-
-.footer__imagen{
-display: flex;
-flex-direction: column;
-width: 40px;
-height: 40px;
-border-radius: 30px;
-}
 
 /* tablet */
 @media (min-width: 541px) and (max-width: 720px) {
@@ -341,16 +300,24 @@ border-radius: 30px;
         display: grid;
         color: $color-titulo;
         justify-content: center;
-        font-size: 30px;
+        font-size: 4rem;
         font-family: $font-principal;   
     }
 
     h2 {
         color: white;
         text-align: center;
-        font-size: 25px;
+        font-size: 3rem;
     }
 
+    h4 { display: grid;
+        font-size: 1rem;
+    }
+
+    p {
+        display: grid;
+        font-size: 0.8rem;
+    }
     .destacadosDeLaSemana__titulo {
         display: grid;
         color: beige;
@@ -358,6 +325,11 @@ border-radius: 30px;
         font-size: 30px;
         font-family: 'Koulen', cursive;
     }
+
+    iframe {
+        width: 17rem;
+        height: 10rem;
+     }
 
     .texterea {
         width: 60vw;
