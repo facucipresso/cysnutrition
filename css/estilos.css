@@ -109,8 +109,8 @@ a {
 .nosotros__titulo {
   color: beige;
   text-align: center;
-  font-size: 5rem;
-  font-style: italic; }
+  font-size: 4rem;
+  font-family: "Koulen", cursive; }
 
 .nosotros__tamaño {
   color: white;
@@ -121,7 +121,7 @@ a {
 
 p {
   color: white;
-  font-size: 16px; }
+  font-size: 1.3rem; }
 
 button {
   background-color: aquamarine;
@@ -140,8 +140,8 @@ button {
   display: grid;
   color: beige;
   justify-content: center;
-  font-size: 5rem;
-  font-style: italic; }
+  font-size: 4rem;
+  font-family: "Koulen", cursive; }
 
 .productos {
   display: flex;
@@ -153,8 +153,8 @@ button {
   .productos__titulo {
     color: beige;
     text-align: center;
-    font-size: 5rem;
-    font-style: italic; }
+    font-size: 4rem;
+    font-family: "Koulen", cursive; }
   .productos__proteinas {
     margin-top: 80px; }
   .productos__quemadores {
@@ -173,8 +173,8 @@ button {
   .combos__titulo {
     color: beige;
     text-align: center;
-    font-size: 5rem;
-    font-style: italic; }
+    font-size: 4rem;
+    font-family: "Koulen", cursive; }
 
 .nuestrosAtletas {
   display: grid;
@@ -186,8 +186,8 @@ button {
   .nuestrosAtletas__titulo {
     color: beige;
     text-align: center;
-    font-size: 5rem;
-    font-style: italic; }
+    font-size: 4rem;
+    font-family: "Koulen", cursive; }
   .nuestrosAtletas__pro {
     background-color: #0190f9;
     padding: 40px;
@@ -199,6 +199,9 @@ button {
 .formulario {
   display: grid;
   justify-content: center; }
+
+.relleno {
+  color: white; }
 
 .card__conteiner {
   display: grid;
@@ -212,23 +215,12 @@ footer {
   display: flex;
   flex-wrap: wrap; }
 
-.footer {
-  display: grid;
-  grid-template-areas: "contactanos horarios seguinos";
-  grid-template-columns: 15fr 15fr 15fr;
-  grid-template-rows: 40px; }
-  .footer__imagen {
-    display: flex;
-    flex-direction: column;
-    width: 40px;
-    height: 40px;
-    border-radius: 30px; }
-
 .grid-contenedor {
   display: grid;
   background-color: black;
   width: 100vw;
-  grid-template-columns: 1fr 1fr 1fr; }
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 3rem; }
 
 .grid-contenedor div {
   background-color: black;
@@ -237,8 +229,12 @@ footer {
   text-align: center;
   border: 1px solid black; }
 
-.imagen__footer {
-  justify-content: center; }
+.footer__imagen {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 30px;
+  text-align: center; }
 
 /* tablet */
 /* celular */
@@ -253,18 +249,42 @@ footer {
     color: white;
     text-align: center;
     font-size: 3rem; }
+  h3 {
+    font-size: 2rem; }
   h4 {
     display: grid;
-    font-size: 0.7rem; }
+    font-size: 0.9rem; }
   p {
     display: grid;
-    font-size: 0.6rem; }
+    font-size: 0.8rem; }
   .destacadosDeLaSemana__titulo {
     display: grid;
     color: beige;
     justify-content: center;
-    font-size: 30px;
+    font-size: 2rem;
     font-family: 'Koulen', cursive; }
+  .productos__titulo {
+    color: beige;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Koulen", cursive; }
+  .combos__titulo {
+    color: beige;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Koulen", cursive; }
+  .nuestrosAtletas__titulo {
+    color: beige;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Koulen", cursive; }
+  .nosotros__titulo {
+    color: beige;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Koulen", cursive; }
+  .nosotros__tamaño {
+    font-size: 1.1rem; }
   iframe {
     width: 17rem;
     height: 10rem; }
@@ -274,8 +294,15 @@ footer {
     margin-right: 20%; }
   .relleno {
     color: beige; }
-  .footer {
+  .grid-contenedor {
     display: grid;
-    grid-template-rows: 5fr 5fr 5fr;
-    grid-template-columns: 3fr;
-    grid-template-areas: "contactanos  horarios  seguinos"; } }
+    background-color: black;
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr; }
+  .footer__imagen {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 30px;
+    text-align: center; } }

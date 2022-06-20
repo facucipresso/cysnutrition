@@ -112,8 +112,8 @@ a {
     &__titulo {
         color: $color-titulo;
         text-align: center;
-        font-size: 5rem;
-        font-style: italic;
+        font-size: 4rem;
+        font-family: $font-principal;
     }
     &__tamaño {
     color: white;
@@ -125,7 +125,7 @@ a {
 }
 p {
     color: white;
-    font-size: 16px;
+    font-size: 1.3rem;
 }
 
 button {
@@ -147,8 +147,8 @@ button {
     display: grid;
     color: $color-titulo;
    justify-content: center;
-    font-size: 5rem;
-    font-style: italic;    
+    font-size: 4rem;
+    font-family: $font-principal;  
 }
 
 .productos {
@@ -161,8 +161,8 @@ button {
     &__titulo {
         color: $color-titulo;
         text-align: center;
-        font-size: 5rem;
-        font-style: italic;
+        font-size: 4rem;
+        font-family: $font-principal;
     }
     &__proteinas {
         margin-top: 80px;
@@ -188,8 +188,8 @@ button {
     &__titulo {
         color: $color-titulo;
         text-align: center;
-        font-size: 5rem;
-        font-style: italic;
+        font-size: 4rem;
+        font-family: $font-principal;
     }
     
 }
@@ -204,8 +204,8 @@ button {
     &__titulo {
         color: $color-titulo;
         text-align: center;
-        font-size: 5rem;
-        font-style: italic;
+        font-size: 4rem;
+        font-family: $font-principal
     }
     &__pro {
         background-color: $color-principal;
@@ -221,6 +221,9 @@ button {
     display: grid ;
     justify-content: center;
 } 
+.relleno {
+    color: white;
+}
 
 
 .card__conteiner {
@@ -238,28 +241,12 @@ footer {
     flex-wrap: wrap;
 }
 
-.footer {
-    display: grid;
-    grid-template-areas: 
-    "contactanos horarios seguinos";
-    grid-template-columns:15fr 15fr 15fr;
-    grid-template-rows: 40px;
-    &__imagen {
-        display: flex;
-        flex-direction: column;
-        width: 40px;
-        height: 40px;
-        border-radius: 30px;
-    }
-}
-
-
-
 .grid-contenedor {
     display: grid;
     background-color: black;
     width: 100vw;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 3rem;
 }
 
 .grid-contenedor div {
@@ -270,10 +257,13 @@ footer {
     border: 1px solid black;
 }
 
-.imagen__footer {
-    justify-content: center;
+.footer__imagen {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 30px;
+    text-align: center;
 }
-
 
 /* tablet */
 @media (min-width: 541px) and (max-width: 720px) {
@@ -310,20 +300,57 @@ footer {
         font-size: 3rem;
     }
 
+    h3 {
+        font-size: 2rem;
+    }
+
     h4 { display: grid;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 
     p {
         display: grid;
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
+
     .destacadosDeLaSemana__titulo {
         display: grid;
         color: beige;
         justify-content: center;
-        font-size: 30px;
+        font-size: 2rem;
         font-family: 'Koulen', cursive;
+    }
+
+    .productos__titulo {
+        color: $color-titulo;
+        text-align: center;
+        font-size: 2rem;
+        font-family: $font-principal;
+    }
+
+    .combos__titulo {
+        color: $color-titulo;
+        text-align: center;
+        font-size: 2rem;
+        font-family: $font-principal;
+    }
+
+    .nuestrosAtletas__titulo {
+        color: $color-titulo;
+        text-align: center;
+        font-size: 2rem;
+        font-family: $font-principal
+    }
+
+    .nosotros__titulo {
+        color: $color-titulo;
+        text-align: center;
+        font-size: 2rem;
+        font-family: $font-principal;
+    }
+
+    .nosotros__tamaño {
+        font-size: 1.1rem;
     }
 
     iframe {
@@ -341,14 +368,21 @@ footer {
         color: $color-titulo;
     }
     
-    .footer {
-    display: grid;
-    grid-template-rows: 5fr 5fr 5fr;
-    grid-template-columns: 3fr;
-    grid-template-areas: 
-    "contactanos 
-    horarios 
-    seguinos";
-    
+    .grid-contenedor {
+        display: grid;
+        background-color: black;
+        width: 100vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        
+        
+    }
+
+    .footer__imagen {
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 30px;
+        text-align: center;
     }
     }
