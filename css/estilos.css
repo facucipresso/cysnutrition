@@ -43,10 +43,10 @@
   background-image: linear-gradient(to top, #797576 #272525); }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  background-color: #0190f9;
-  height: 100px; }
+  /*display: flex;
+    justify-content: space-between;
+    background-color: $color-principal;
+    height: 100px;*/ }
   header a:hover {
     text-decoration: underline; }
   header__logo {
@@ -255,10 +255,10 @@ footer {
     font-size: 3rem; }
   h4 {
     display: grid;
-    font-size: 1rem; }
+    font-size: 0.7rem; }
   p {
     display: grid;
-    font-size: 0.8rem; }
+    font-size: 0.6rem; }
   .destacadosDeLaSemana__titulo {
     display: grid;
     color: beige;
